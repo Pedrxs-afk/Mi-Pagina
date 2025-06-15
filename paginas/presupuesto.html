@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Presupuesto - Empresa Ficticia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/presupuesto.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo" />
+      <span>Empresa Ficticia</span>
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="presupuesto.html">Presupuesto</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Solicitar presupuesto</h2>
+    <form id="formulario">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" maxlength="15" required />
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" maxlength="40" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" maxlength="9" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Presupuesto</legend>
+        <label for="producto">Producto:</label>
+        <select id="producto">
+          <option value="100">Sitio Web Básico - €100</option>
+          <option value="200">Tienda Online - €200</option>
+          <option value="300">Aplicación Web - €300</option>
+        </select>
+
+        <label for="plazo">Plazo estimado (días):</label>
+        <input type="number" id="plazo" value="30" />
+
+        <p>Extras:</p>
+        <label><input type="checkbox" class="extra" value="50" /> Hosting (€50)</label><br />
+        <label><input type="checkbox" class="extra" value="100" /> Mantenimiento (€100)</label><br />
+
+        <p><strong>Total estimado: €<span id="total">0</span></strong></p>
+
+        <label><input type="checkbox" id="condiciones" /> Acepto las condiciones</label><br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="#"><img src="../img/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="../img/twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="../img/instagram.svg" alt="Instagram" /></a>
+    </div>
+    <p>Dirección: Calle Falsa 123, Madrid</p>
+    <p>&copy; 2025 Empresa Ficticia</p>
+  </footer>
+</body>
+</html>
